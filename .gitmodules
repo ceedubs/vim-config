@@ -28,3 +28,6 @@
 [submodule "bundle/idris-vim"]
 	path = bundle/idris-vim
 	url = https://github.com/idris-hackers/idris-vim.git
+[submodule "bundle/gundo.vim"]
+	path = bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim.git
