@@ -4,7 +4,7 @@ call pathogen#infect()
 
 set nocompatible
 syntax on
-colorscheme wombat256
+colorscheme Tomorrow-Night-Eighties
 filetype plugin on
 set ai
 set tabstop=2 shiftwidth=2 expandtab
