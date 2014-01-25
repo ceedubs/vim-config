@@ -91,3 +91,7 @@ nnoremap <leader>v :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " undo file changes from fugitive commit view
 autocmd FileType gitcommit nmap <buffer> U :Git checkout -- <C-r><C-g><CR>
+
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep=''
+let g:airline_right_sep=''
