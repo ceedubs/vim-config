@@ -68,13 +68,6 @@ command! -nargs=1 SS let @/ = '\V'.escape(<q-args>, '/\')|normal! /<C-R>/<CR>
 " search for tags files in reasonable places
 set tags=./.tags,.tags,./tags,tags
 
-" NERD tree
-" shortcut to open NERD tree
-map <leader>n :NERDTreeToggle<CR>
-" Close vim if the only window left is a NERD tree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q
-let NERDTreeShowLineNumbers=1
-
 if &term =~ '256color'
   " Disable Background Color Erase (BCE) so that color schemes
   " work properly when Vim is used inside tmux and GNU screen.
