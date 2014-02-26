@@ -62,7 +62,7 @@ let @d=':s/^/x =strftime("%Y-%m-%d") /'
 let mapleader = ";"
 let maplocalleader = ","
 
-set wildignore+=.git,*.class,*/generated-code/*,*/target/*
+set wildignore+=.git,*.class,*/generated-code/*,*/target/*,*/dist/*
 
 " a search like '/' but escapes special characters
 command! -nargs=1 SS let @/ = '\V'.escape(<q-args>, '/\')|normal! /<C-R>/<CR>
