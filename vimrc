@@ -8,6 +8,8 @@ colorscheme Tomorrow-Night-Eighties
 filetype plugin on
 set ai
 set tabstop=2 shiftwidth=2 expandtab
+set hidden
+set autoread
 
 " don't highlight matching parentheses/brackets
 let loaded_matchparen=1
