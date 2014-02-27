@@ -20,7 +20,7 @@
 	path = bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
 [submodule "bundle/vim-sbt"]
-	path = bundle/vim-sbt
+	path = bundle/vim-basic-sbt
 	url = https://github.com/derekwyatt/vim-sbt.git
 [submodule "bundle/idris-vim"]
 	path = bundle/idris-vim
