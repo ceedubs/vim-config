@@ -19,9 +19,6 @@
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
-[submodule "bundle/vim-sbt"]
-	path = bundle/vim-basic-sbt
-	url = https://github.com/derekwyatt/vim-sbt.git
 [submodule "bundle/idris-vim"]
 	path = bundle/idris-vim
 	url = https://github.com/idris-hackers/idris-vim.git
@@ -31,3 +28,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/vim-sbt"]
+	path = bundle/vim-sbt
+	url = https://github.com/derekwyatt/vim-sbt.git
