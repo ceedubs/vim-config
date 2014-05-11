@@ -97,3 +97,8 @@ autocmd FileType gitcommit nmap <buffer> U :Git checkout -- <C-r><C-g><CR>
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+
+" Use ":DiffOrig" to see the differences
+" between the current buffer and the file it was loaded from.
+command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_
+\ | diffthis | wincmd p | diffthis
