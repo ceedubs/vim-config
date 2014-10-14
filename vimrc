@@ -10,6 +10,7 @@ set ai
 set tabstop=2 shiftwidth=2 expandtab
 set hidden
 set autoread
+set backspace=indent,eol,start
 
 " don't highlight matching parentheses/brackets
 let loaded_matchparen=1
