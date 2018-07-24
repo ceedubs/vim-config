@@ -1,3 +1,5 @@
+vimrc.local
+
 *.swp
 *~
 .DS_Store

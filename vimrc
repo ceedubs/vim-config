@@ -57,9 +57,6 @@ autocmd BufRead COMMIT_EDITMSG setlocal spell!
 " for commit messages, open diff (between current and HEAD) in split window
 autocmd BufRead COMMIT_EDITMSG rightb vert new | set buftype=nofile | set bufhidden=hide | setlocal noswapfile | read !git diff --cached
 
-" mark todo lines as done (with current date)
-let @d=':s/^/x =strftime("%Y-%m-%d") /'
-
 let mapleader = ";"
 let maplocalleader = ","
 
@@ -103,3 +100,17 @@ let g:airline_right_sep=''
 " between the current buffer and the file it was loaded from.
 command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_
 \ | diffthis | wincmd p | diffthis
+
+" completion stuff
+" http://vim.wikia.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
+:set completeopt=longest,menuone
+inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
+  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+let local_vim_config = $HOME . '/.vim/vimrc.local'
+if filereadable(local_vim_config)
+ execute "source " . local_vim_config
+endif
