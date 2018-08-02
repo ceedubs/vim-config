@@ -114,3 +114,11 @@ let local_vim_config = $HOME . '/.vim/vimrc.local'
 if filereadable(local_vim_config)
  execute "source " . local_vim_config
 endif
+
+" configure ack.vim to use ag
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep --smart-case'
+endif
+
+" configure ctlp to use ag
+let g:ctrlp_user_command = 'ag %s --nocolor --nogroup --hidden -g ""'
