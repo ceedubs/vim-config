@@ -83,8 +83,8 @@ let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'bookmarkdir']
 
 " ack.vim
 nnoremap <leader>a :Ack! 
-nnoremap <leader>as :Ack! --type scala 
-nnoremap <leader>afs yiw:Ack! --type scala <C-r>"<CR>
+nnoremap <leader>as :Ack! --scala 
+nnoremap <leader>afs yiw:Ack! --scala <C-r>"<CR>
 
 " open a tag in a vertical split
 nnoremap <leader>v :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
@@ -117,7 +117,7 @@ endif
 
 " configure ack.vim to use ag
 if executable('ag')
-  let g:ackprg = 'ag --vimgrep --smart-case'
+  let g:ackprg = 'ag --nogroup --nocolor --column'
 endif
 
 " configure ctlp to use ag
