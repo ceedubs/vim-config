@@ -1,7 +1,3 @@
-" pathogen plugin for managing runtimepath
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
-
 set nocompatible
 syntax on
 colorscheme Tomorrow-Night-Eighties
@@ -11,6 +7,8 @@ set tabstop=2 shiftwidth=2 expandtab
 set hidden
 set autoread
 set backspace=indent,eol,start
+
+set nohlsearch
 
 " don't highlight matching parentheses/brackets
 let loaded_matchparen=1
@@ -33,7 +31,7 @@ snoremap kj <Esc>
 " 2 <C-g> is more helpful than <C-g>
 "noremap <C-g> 2<C-g>
 set laststatus=2
-let g:airline_theme='dark'
+let g:airline_theme='bubblegum'
 
 " resize vsplits on window resize
 " taken from http://vimbits.com/bits/268
@@ -122,3 +120,5 @@ endif
 
 " configure ctlp to use ag
 let g:ctrlp_user_command = 'ag %s --nocolor --nogroup --hidden -g ""'
+
+let g:vim_markdown_folding_disabled=1
